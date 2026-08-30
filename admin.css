@@ -1,3 +1,27 @@
 body {
   color: red;
+  margin: 0;
+  padding: 0;
+}
+
+/* Parent Container*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: pink;
+  grid-row: 1/3;
+}
+
+.header {
+  background-color: blue;
+}
+
+/* Parent Container for Main section*/
+.grid-main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
