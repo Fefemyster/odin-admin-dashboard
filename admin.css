@@ -9,6 +9,11 @@ img {
   height: 20px;
 }
 
+.yachiRoYa {
+  width: 80px;
+  height: 80px;
+}
+
 ul > li {
   list-style: none;
   display: flex;
@@ -41,9 +46,53 @@ ul > li {
 
 /*Sidebar End*/
 
+/*Header Start*/
 .header {
-  background-color: blue;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: red;
+  gap: 10px;
 }
+
+.navigation {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-content: center;
+}
+
+.user-details {
+  display: flex;
+  gap: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+/*Parent container for user info and actions*/
+.user-menu {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color: blue;
+  align-items: center;
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+}
+
+.searchBar {
+  display: flex;
+  gap: 10px;
+}
+
+/*Header End*/
 
 /* Parent Container for Main section*/
 .grid-main {
