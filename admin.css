@@ -1,5 +1,5 @@
 body {
-  color: red;
+  color: yellowgreen;
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,16 +16,11 @@ img {
   height: 80px;
 }
 
-ul > li {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
 /* Parent Container*/
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(3, 3fr);
 }
 
 /*Sidebar Start*/
@@ -33,7 +28,7 @@ ul > li {
   display: grid;
   grid-template-rows: 1fr 3fr;
   background-color: pink;
-  grid-row: 1/3;
+  grid-row: 1/4;
 }
 
 .sidebar-list {
@@ -52,20 +47,16 @@ ul > li {
 .header {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   background-color: red;
-}
-
-.navigation {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  align-content: center;
-  grid-column: 1/3;
 }
 
 .user-details {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: purple;
 }
 
 .user-info {
@@ -73,28 +64,34 @@ ul > li {
   align-items: center;
 }
 
-/*Parent container for user info and actions*/
 .user-menu {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-row: 2/3;
-  grid-column: 1/3;
   background-color: blue;
   align-items: center;
 }
 
 .user-actions {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
+  background: greenyellow;
 }
 
 .user-info {
   display: flex;
+  background-color: lightblue;
+
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .searchBar {
   display: flex;
-  gap: 10px;
+  background-color: yellow;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 /*Header End*/
@@ -104,6 +101,7 @@ ul > li {
   display: grid;
   grid-template-columns: 3fr 1fr;
   background-color: black;
+  grid-row: 2/4;
 }
 
 .title {
@@ -116,4 +114,8 @@ ul > li {
   background-color: purple;
   margin: 10px;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+}
+
+.right-sidebar {
+  display: grid;
 }
