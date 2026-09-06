@@ -1,14 +1,20 @@
 body {
-  color: yellowgreen;
+  color: white;
   margin: 0;
   padding: 0;
   display: flex;
   flex: 1;
 }
 
+ul,
+ol {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 ul li {
@@ -31,8 +37,9 @@ ul li {
 .sidebar {
   display: grid;
   grid-template-rows: 2fr 3fr;
-  background-color: pink;
+  background-color: #1992d4;
   grid-row: 1/4;
+  padding: 35px;
 }
 
 .sidebar-list {
@@ -43,6 +50,34 @@ ul li {
 .user-settings-list {
   display: grid;
   gap: 10px;
+}
+
+.sidebar-container {
+  display: grid;
+}
+
+ul li,
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.logo {
+  font-size: 2em;
+  gap: 5px;
+  margin-bottom: 1em;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+div img {
+  width: 40px;
+  height: 40px;
 }
 
 /*Sidebar End*/
