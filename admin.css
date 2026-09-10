@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
   color: white;
   margin: 0;
   padding: 0;
   display: flex;
   flex: 1;
+  font-family: Roboto, sans-serif, Helvetica, Arial;
 }
 
 ul,
@@ -108,7 +111,7 @@ div img {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 15px;
+  padding: 20px;
 }
 
 .searchBar {
@@ -181,7 +184,7 @@ button {
 .grid-main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 8fr;
+  grid-template-rows: 1fr 12fr;
   background-color: #e2e8f0;
   color: black;
 }
@@ -198,6 +201,12 @@ button {
   padding: 0px;
 }
 
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-row: 2/3;
+}
+
 .card {
   display: grid;
   background-color: #ffffff;
@@ -206,13 +215,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   border-left: 10px #f0b42a solid;
-}
-
-.cards-grid {
-  display: grid;
-  background-color: purple;
-  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  grid-row: 2/3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .icons {
@@ -221,10 +224,37 @@ button {
   gap: 1rem;
 }
 
+.announcements,
+.trending {
+  display: grid;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcements p {
+  border-bottom: 2px solid #d2d2d2;
+}
+
+.announcements {
+  padding: 30px;
+}
+
+.trending ul {
+  display: grid;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.trending img {
+  border-radius: 100%;
+}
+
 .right-sidebar {
   display: grid;
   grid-column: 2/3;
   grid-row: 2/3;
   margin: 15px;
-  background-color: yellow;
+  gap: 3rem;
 }
