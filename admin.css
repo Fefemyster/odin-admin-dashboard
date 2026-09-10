@@ -101,6 +101,7 @@ div img {
   color: black;
   font-size: 20px;
   padding: 20px;
+  flex-flow: wrap;
 }
 
 .search {
@@ -153,6 +154,7 @@ button {
   height: 3rem;
   border-radius: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .username {
@@ -179,22 +181,50 @@ button {
 .grid-main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  background-color: black;
-  grid-row: 2/4;
+  grid-template-rows: 1fr 8fr;
+  background-color: #e2e8f0;
+  color: black;
+}
+
+.projects-title,
+.announcement-title {
+  margin: 15px;
+  align-self: end;
 }
 
 .title {
-  grid-column: 1/3;
-  grid-row: 1/2;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  display: grid;
+  background-color: #ffffff;
+  color: black;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 10px #f0b42a solid;
 }
 
 .cards-grid {
   display: grid;
   background-color: purple;
-  margin: 10px;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-row: 2/3;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
 }
 
 .right-sidebar {
   display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 15px;
+  background-color: yellow;
 }
